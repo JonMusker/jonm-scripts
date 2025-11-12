@@ -23,11 +23,11 @@ if( originalUsername.indexOf('@') > 3) {
 //Overrides for special cases
 switch( originalUsername.toLowerCase() ){
     case 'jon.musker@cyberark.cloud.10061':
-        targetUsername = 'JMCyberArkCloud@cctest1.muskernet.com';
+        targetUsername = 'JMCyberArkCloud@' + targetDomain;
         trace ('Override!');
         break;
     case 'jon@muskernet.onmicrosoft.com' :
-        targetUsername = 'jonmusker@cctest1.muskernet.com';
+        targetUsername = 'jonmusker@' + targetDomain;
         trace ('Override!');
         break;
 }
